@@ -20,6 +20,7 @@ multiply(x)
         var multi = multi_fraction(this,x);
         console.log("%d/%d",multi.num,multi.den);
     }
+    
     div(x)
     {
         console.log("%d/%d = %d",this.num/x.num,this.den/x.den,(this.num/x.num)/(this.den/x.den));
@@ -59,7 +60,13 @@ function subtract_fraction(x,y)
     result.num = x.num*(result.den/x.den) - y.num*(result.den/y.den);
     return result;
 }
-
+function multi_fraction(x,y)
+{
+    var result = new fraction;
+    result.num = x.num * y.num;
+    result.den = x.den * y.den;
+    return result;
+}
 function main()
 {
     var x = new fraction(1,2);
