@@ -21,7 +21,6 @@ multiply(x)
         console.log("%d/%d",multi.num,multi.den);
     }
     
-    div(x)
     divide(x)
     {
         var div = divide_fraction(this,x);
@@ -69,6 +68,15 @@ function multi_fraction(x,y)
     result.den = x.den * y.den;
     return result;
 }
+
+function divide_fraction(x,y)
+{
+    var result = new fraction;
+    result.num = x.num / y.num;
+    result.den = x.den / y.den;
+    return result;
+}
+
 function main()
 {
     var x = new fraction(1,2);
