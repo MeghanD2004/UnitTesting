@@ -8,7 +8,7 @@ class fraction
     add(x)
     {
         var sum = add_fraction(this,x);
-        console.log("%d/%d",sum.num,sum.den);
+        console.log("%d/%d + %d/%d = %d/%d = %d",this.num,this.den,x.num,x.den,sum.num,sum.den,sum.num/sum.den);
     }
     subtract(x)
     {
