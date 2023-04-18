@@ -20,10 +20,11 @@ multiply(x)
         var multi = multi_fraction(this,x);
         console.log("%d/%d",multi.num,multi.den);
     }
-    div(x)
+    divide(x)
     {
-        console.log("%d/%d = %d",this.num/x.num,this.den/x.den,(this.num/x.num)/(this.den/x.den));
-    }
+        var div = divide_fraction(this,x);
+        console.log("(%d/%d)/(%d/%d) = %d/%d = %d",this.num,this.den,x.num,x.den,div.num,div.den,div.num/div.den);
+    }
     reciprocal()
     {
         console.log("%d/%d",this.den,this.num);
