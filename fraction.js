@@ -15,8 +15,10 @@ class fraction
         var subtract = subtract_fraction(this,x);
         console.log("%d/%d",subtract.num,subtract.den);
     }
-    multiply(x)
-    {           console.log("%d/%d",this.num*x.num,this.den*x.den);
+multiply(x)
+    {
+        var multi = multi_fraction(this,x);
+        console.log("%d/%d",multi.num,multi.den);
     }
     div(x)
     {
